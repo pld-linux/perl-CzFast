@@ -11,10 +11,10 @@ Version:	0.10
 Release:	4
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
 # Source0-md5:	03f8221f66f181f8c08c121c4707e2d9
 Source1:	%{pnam}.3pm
-URL:		http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.readme
+URL:		http://search.cpan.org/dist/CzFast/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
