@@ -35,8 +35,8 @@ na potrzeby projektu Csacek (http://www.csacek.cz/).
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make}
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
 
@@ -47,7 +47,6 @@ install -d $RPM_BUILD_ROOT%{_mandir}/cs/man3
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
 mv $RPM_BUILD_ROOT%{_mandir}/man3/CzFast.3pm* $RPM_BUILD_ROOT%{_mandir}/cs/man3
 install %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/man3
 
