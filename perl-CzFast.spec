@@ -31,7 +31,7 @@ na potrzeby projektu Csacek (http://www.csacek.cz).
 %setup -q -n %{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{__make} OPTIMIZE="%{rpmcflags}"
 
