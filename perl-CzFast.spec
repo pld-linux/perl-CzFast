@@ -8,7 +8,7 @@ Summary(pl):	CzFast - modu³ Perla do manipulacji czeskimi zestawami znaków
 Name:		perl-CzFast
 Version:	0.10
 Release:	3
-License:	GPL 1+ / Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
 # Source0-md5:	03f8221f66f181f8c08c121c4707e2d9
@@ -21,12 +21,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 CzFast is a Perl module for Czech charsets manipulation. It uses
 character tables created by Jaromir Dolecek for the Csacek project
-(http://www.csacek.cz).
+(http://www.csacek.cz/).
 
 %description -l pl
 CzFast jest modu³em Perla do manipulacji czeskimi zestawami znaków.
 Korzysta on z tablic przekodowañ utworzonych przez Jaromira Dolecka
-na potrzeby projektu Csacek (http://www.csacek.cz).
+na potrzeby projektu Csacek (http://www.csacek.cz/).
 
 %prep
 %setup -q -n %{pnam}-%{version}
