@@ -13,7 +13,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
 Source1:	%{pnam}.3pm
 URL:		http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.readme
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
