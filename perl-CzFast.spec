@@ -7,14 +7,14 @@ Summary:	CzFast - Perl module for Czech charsets manipulation
 Summary(pl):	CzFast - modu³ Perla do manipulacji czeskimi zestawami znaków
 Name:		perl-CzFast
 Version:	0.10
-Release:	2
+Release:	3
 License:	GPL 1+ / Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
 Source1:	%{pnam}.3pm
 URL:		http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.readme
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,7 +31,8 @@ na potrzeby projektu Csacek (http://www.csacek.cz).
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{__make} OPTIMIZE="%{rpmcflags}"
 
@@ -54,9 +55,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/CzFast.pm
-%dir %{perl_sitearch}/auto/CzFast
-%{perl_sitearch}/auto/CzFast/CzFast.bs
-%attr(755,root,root) %{perl_sitearch}/auto/CzFast/CzFast.so
+%{perl_vendorarch}/CzFast.pm
+%dir %{perl_vendorarch}/auto/CzFast
+%{perl_vendorarch}/auto/CzFast/CzFast.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/CzFast/CzFast.so
 %{_mandir}/man3/*
 %lang(cs) %{_mandir}/cs/man3/*
