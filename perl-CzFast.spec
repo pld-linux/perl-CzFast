@@ -7,7 +7,7 @@ Summary:	CzFast - Perl module for Czech charsets manipulation
 Summary(pl):	CzFast - modu³ Perla do manipulacji czeskimi zestawami znaków
 Name:		perl-CzFast
 Version:	0.10
-Release:	1
+Release:	2
 License:	GPL 1+ / Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
