@@ -3,7 +3,7 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pnam	CzFast
+%define	pnam	CzFast
 Summary:	CzFast - Perl module for Czech charsets manipulation
 Summary(pl):	CzFast - modu³ Perla do manipulacji czeskimi zestawami znaków
 Name:		perl-CzFast
