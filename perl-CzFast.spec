@@ -11,6 +11,7 @@ Release:	3
 License:	GPL 1+ / Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
+# Source0-md5:	03f8221f66f181f8c08c121c4707e2d9
 Source1:	%{pnam}.3pm
 URL:		http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.readme
 BuildRequires:	perl-devel >= 5.6
