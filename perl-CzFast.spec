@@ -10,9 +10,9 @@ Version:	0.10
 Release:	1
 License:	GPL 1+ / Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/T/TR/TRIPLE/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.tar.gz
 Source1:	%{pnam}.3pm
-URL:		http://www.cpan.org/authors/id/T/TR/TRIPLE/%{pnam}-%{version}.readme
+URL:		http://www.cpan.org/authors/id/T/TR/TRIPIE/%{pnam}-%{version}.readme
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
