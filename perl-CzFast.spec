@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	CzFast
 Summary:	CzFast - Perl module for Czech charsets manipulation
-Summary(pl):	CzFast - modu≥ Perla do manipulacji czeskimi zestawami znakÛw
+Summary(pl.UTF-8):   CzFast - modu≈Ç Perla do manipulacji czeskimi zestawami znak√≥w
 Name:		perl-CzFast
 Version:	0.10
 Release:	4
@@ -24,9 +24,9 @@ CzFast is a Perl module for Czech charsets manipulation. It uses
 character tables created by Jaromir Dolecek for the Csacek project
 (http://www.csacek.cz/).
 
-%description -l pl
-CzFast jest modu≥em Perla do manipulacji czeskimi zestawami znakÛw.
-Korzysta on z tablic przekodowaÒ utworzonych przez Jaromira Dolecka
+%description -l pl.UTF-8
+CzFast jest modu≈Çem Perla do manipulacji czeskimi zestawami znak√≥w.
+Korzysta on z tablic przekodowa≈Ñ utworzonych przez Jaromira Dolecka
 na potrzeby projektu Csacek (http://www.csacek.cz/).
 
 %prep
