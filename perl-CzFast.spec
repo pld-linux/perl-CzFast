@@ -36,6 +36,7 @@ na potrzeby projektu Csacek (http://www.csacek.cz/).
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
