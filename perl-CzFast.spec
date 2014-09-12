@@ -59,7 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/CzFast.pm
 %dir %{perl_vendorarch}/auto/CzFast
-%{perl_vendorarch}/auto/CzFast/CzFast.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/CzFast/CzFast.so
 %{_mandir}/man3/*
 %lang(cs) %{_mandir}/cs/man3/*
